@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[    134860,       2716]
-NotebookOptionsPosition[    126130,       2598]
-NotebookOutlinePosition[    127384,       2631]
-CellTagsIndexPosition[    127341,       2628]
+NotebookDataLength[    135756,       2707]
+NotebookOptionsPosition[    127025,       2589]
+NotebookOutlinePosition[    128279,       2622]
+CellTagsIndexPosition[    128236,       2619]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -51,11 +51,11 @@ space. It describes how the axes of a rotated frame are oriented relative to \
 a fixed reference frame.
 Let\[CloseCurlyQuote]s define functions that represents rotations around the \
 3 axis.
-To insert greek letters, use Esc+letter+Esc. Example Esc+a+Esc = \[Alpha]\
+To insert greek letters, use Esc+letter+Esc. Example Esc+a+Esc = \[Alpha].\
 \>", "Text",
  CellChangeTimes->{{3.9761772682303276`*^9, 3.9761772786716003`*^9}, {
-  3.976177312839716*^9, 
-  3.9761773266498413`*^9}},ExpressionUUID->"d76e3bf5-ea83-e74d-abb5-\
+   3.976177312839716*^9, 3.9761773266498413`*^9}, 
+   3.9761833372631226`*^9},ExpressionUUID->"d76e3bf5-ea83-e74d-abb5-\
 7be5a11572b1"],
 
 Cell[BoxData[{
@@ -116,8 +116,7 @@ Cell[BoxData[{
    RowBox[{"Rotation", " ", "around", " ", "z"}], "*)"}]}]}], "Input",
  CellChangeTimes->{{3.9761776833032684`*^9, 3.9761777238861084`*^9}, {
   3.976177823460882*^9, 3.9761778381089745`*^9}},
- CellLabel->
-  "In[267]:=",ExpressionUUID->"d12d3cf7-dfaa-634e-9f4b-14c76d3e5a2d"],
+ CellLabel->"In[1]:=",ExpressionUUID->"d12d3cf7-dfaa-634e-9f4b-14c76d3e5a2d"],
 
 Cell[BoxData[
  RowBox[{
@@ -132,16 +131,16 @@ Cell[BoxData[
     ExpressionUUID->"ec5573f0-36e9-9e49-b047-32b7923515a6"], 
    RowBox[{"Rz", "[", "\[Beta]", "]"}]}], "//", "MatrixForm"}]], "Input",
  CellChangeTimes->{{3.9761780631259747`*^9, 3.9761780687509785`*^9}},
- CellLabel->
-  "In[270]:=",ExpressionUUID->"461b7f6a-25ae-5e48-8fc4-fcc7be9e35b4"],
+ CellLabel->"In[4]:=",ExpressionUUID->"461b7f6a-25ae-5e48-8fc4-fcc7be9e35b4"],
 
 Cell["\<\
 One of the properties of the rotation matrices is that they are orthogonal: \
 Inverse[M] = Transpose[M].
-Let\[CloseCurlyQuote]s show it\
+Let\[CloseCurlyQuote]s show it:\
 \>", "Text",
- CellChangeTimes->{{3.976178091631439*^9, 
-  3.976178098461441*^9}},ExpressionUUID->"e22e359e-ed5c-3343-8ab3-\
+ CellChangeTimes->{{3.976178091631439*^9, 3.976178098461441*^9}, {
+  3.9761833431099625`*^9, 
+  3.9761833440457497`*^9}},ExpressionUUID->"e22e359e-ed5c-3343-8ab3-\
 7c262528b00e"],
 
 Cell[BoxData[{
@@ -151,8 +150,7 @@ Cell[BoxData[{
     RowBox[{"Rz", "[", "\[Beta]", "]"}], "]"}]}], ";"}], "\n", 
  RowBox[{"Mzinv", "//", "MatrixForm"}]}], "Input",
  CellChangeTimes->{3.9761781269091015`*^9},
- CellLabel->
-  "In[271]:=",ExpressionUUID->"6f022072-4221-8b4a-b13c-13e0c7549db9"],
+ CellLabel->"In[5]:=",ExpressionUUID->"6f022072-4221-8b4a-b13c-13e0c7549db9"],
 
 Cell[BoxData[{
  RowBox[{
@@ -160,18 +158,17 @@ Cell[BoxData[{
    RowBox[{"Simplify", "[", "Mzinv", "]"}]}], ";"}], "\n", 
  RowBox[{"Mzinv", "//", "MatrixForm"}]}], "Input",
  CellChangeTimes->{3.976178147203472*^9},
- CellLabel->
-  "In[273]:=",ExpressionUUID->"d223bfb9-ac3e-c44a-8970-6cccf14f8068"],
+ CellLabel->"In[7]:=",ExpressionUUID->"d223bfb9-ac3e-c44a-8970-6cccf14f8068"],
 
 Cell["\<\
 As we anticipated, the input of the function as been defined as w_ and this \
 allow us to insert what we like.
-Let\[CloseCurlyQuote]s try to put some numbers. Like \[Pi]/4. To write \[Pi] \
+Let\[CloseCurlyQuote]s try to put some numbers. Like \[Pi]/4. To write \[Pi]  \
 use Esc+pi+Esc.\
 \>", "Text",
  CellChangeTimes->{{3.976178183828697*^9, 3.9761781939327106`*^9}, {
-  3.976178257291815*^9, 
-  3.9761782605673428`*^9}},ExpressionUUID->"e16fd317-a760-524b-80fa-\
+   3.976178257291815*^9, 3.9761782605673428`*^9}, 
+   3.9761834091797867`*^9},ExpressionUUID->"e16fd317-a760-524b-80fa-\
 4fd28e069731"],
 
 Cell[BoxData[
@@ -180,8 +177,7 @@ Cell[BoxData[
    RowBox[{"\[Pi]", "/", "4"}], "]"}], " ", "//", " ", 
   "MatrixForm"}]], "Input",
  CellChangeTimes->{{3.976178212681961*^9, 3.97617823923629*^9}},
- CellLabel->
-  "In[275]:=",ExpressionUUID->"db63513f-9ecf-8a47-9e7f-251f5b8f2ec4"],
+ CellLabel->"In[9]:=",ExpressionUUID->"db63513f-9ecf-8a47-9e7f-251f5b8f2ec4"],
 
 Cell["\<\
 If you want to compute the numerical approximation of those ratios, use N in \
@@ -197,8 +193,7 @@ Cell[BoxData[
    RowBox[{"Rz", "[", 
     RowBox[{"\[Pi]", "/", "4"}], "]"}], "]"}], "//", "MatrixForm"}]], "Input",
  CellChangeTimes->{{3.9761787608954983`*^9, 3.9761787719515896`*^9}},
- CellLabel->
-  "In[276]:=",ExpressionUUID->"40428afe-d55d-874e-8833-5d83641c36e2"],
+ CellLabel->"In[10]:=",ExpressionUUID->"40428afe-d55d-874e-8833-5d83641c36e2"],
 
 Cell["\<\
  A combination of multiple rotation of generic angles can be expressed by:\
@@ -216,8 +211,7 @@ Cell[BoxData[
      RowBox[{"Ry", "[", "\[Beta]", "]"}]}], "]"}]}], ";", 
   RowBox[{"R1", "//", "MatrixForm"}]}]], "Input",
  CellChangeTimes->{{3.9761787933678226`*^9, 3.976178798663889*^9}},
- CellLabel->
-  "In[277]:=",ExpressionUUID->"0225253d-df03-6c44-b721-6182b41f0187"],
+ CellLabel->"In[11]:=",ExpressionUUID->"0225253d-df03-6c44-b721-6182b41f0187"],
 
 Cell["Definition of Euler's angles:", "Text",
  CellChangeTimes->{{3.976178808105036*^9, 
@@ -239,11 +233,11 @@ Cell[BoxData[{
     RowBox[{
     "Function", " ", "that", " ", "rotates", " ", "a", " ", "body", " ", 
      "given", " ", "three", " ", 
-     RowBox[{"Euler", "'"}], "s", " ", "agnels", " ", "on", " ", "the", " ", 
+     RowBox[{"Euler", "'"}], "s", " ", "angles", " ", "on", " ", "the", " ", 
      "form", " ", "RotZ"}], "-", "RotX", "-", "RotZ"}], "*)"}]}]}], "Input",
- CellChangeTimes->{{3.97617883784865*^9, 3.97617883784865*^9}},
- CellLabel->
-  "In[278]:=",ExpressionUUID->"382baee4-3d53-ca47-8bdf-469019af94b8"],
+ CellChangeTimes->{{3.97617883784865*^9, 3.97617883784865*^9}, {
+  3.9761834989260254`*^9, 3.9761835148209267`*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"382baee4-3d53-ca47-8bdf-469019af94b8"],
 
 Cell[BoxData[{
  RowBox[{
@@ -260,11 +254,11 @@ Cell[BoxData[{
     RowBox[{
     "Function", " ", "that", " ", "rotates", " ", "a", " ", "body", " ", 
      "given", " ", "three", " ", 
-     RowBox[{"Euler", "'"}], "s", " ", "agnels", " ", "on", " ", "the", " ", 
+     RowBox[{"Euler", "'"}], "s", " ", "angles", " ", "on", " ", "the", " ", 
      "form", " ", "RotZ"}], "-", "RotY", "-", "RotZ"}], "*)"}]}]}], "Input",
- CellChangeTimes->{{3.976178861099291*^9, 3.976178861099291*^9}},
- CellLabel->
-  "In[279]:=",ExpressionUUID->"2c97e4d3-8dc4-1146-97c2-41ff6c7960f9"],
+ CellChangeTimes->{{3.976178861099291*^9, 3.976178861099291*^9}, {
+  3.9761835063364563`*^9, 3.9761835116200542`*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"2c97e4d3-8dc4-1146-97c2-41ff6c7960f9"],
 
 Cell[BoxData[
  RowBox[{
@@ -273,8 +267,7 @@ Cell[BoxData[
     RowBox[{"\[Alpha]", ",", "\[Beta]", ",", "\[Gamma]"}], "]"}], "]"}], "//",
    "MatrixForm"}]], "Input",
  CellChangeTimes->{{3.9761788685594234`*^9, 3.9761788685594234`*^9}},
- CellLabel->
-  "In[280]:=",ExpressionUUID->"a92ff26a-f104-aa43-8583-8e5e0a0f4643"]
+ CellLabel->"In[14]:=",ExpressionUUID->"a92ff26a-f104-aa43-8583-8e5e0a0f4643"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -287,10 +280,10 @@ Cell[" 4. Homogeneous Transformation Matrix", "Title",
 
 Cell["\<\
 This kind of transformation is adding a translation to a rotation .
-Let' s build a function that help me do that .\
+Let's build a function that help me do that .\
 \>", "Text",
- CellChangeTimes->{{3.9761800268212223`*^9, 
-  3.9761800360241146`*^9}},ExpressionUUID->"caf00fdd-5e0f-614d-8fd6-\
+ CellChangeTimes->{{3.9761800268212223`*^9, 3.9761800360241146`*^9}, 
+   3.976183877849804*^9},ExpressionUUID->"caf00fdd-5e0f-614d-8fd6-\
 4ee63baef2a4"],
 
 Cell[BoxData[{
@@ -328,15 +321,14 @@ Cell[BoxData[{
      RowBox[{"p1", ",", "p2", ",", "p3"}], "}"}]}], "]"}], "//", 
   "MatrixForm"}]}], "Input",
  CellChangeTimes->{{3.97618004332757*^9, 3.976180043331171*^9}},
- CellLabel->
-  "In[281]:=",ExpressionUUID->"479e0761-6ff8-244a-8382-072370b9da2a"],
+ CellLabel->"In[15]:=",ExpressionUUID->"479e0761-6ff8-244a-8382-072370b9da2a"],
 
 Cell["\<\
 It is possible to give as arguments of the function, some functions .
-For example, parameter that are functions of time\
+For example, parameter that are functions of time:\
 \>", "Text",
- CellChangeTimes->{{3.976180049518238*^9, 
-  3.976180060353859*^9}},ExpressionUUID->"7c9ad66e-b561-1e45-b5ba-\
+ CellChangeTimes->{{3.976180049518238*^9, 3.976180060353859*^9}, 
+   3.976183629296236*^9},ExpressionUUID->"7c9ad66e-b561-1e45-b5ba-\
 7372fba27155"],
 
 Cell[BoxData[{
@@ -352,8 +344,7 @@ Cell[BoxData[{
        RowBox[{"z0", "[", "t", "]"}]}], "}"}]}], "]"}]}], ";"}], "\n", 
  RowBox[{"M01t", "//", "MatrixForm"}]}], "Input",
  CellChangeTimes->{{3.9761800660648727`*^9, 3.9761800660648727`*^9}},
- CellLabel->
-  "In[283]:=",ExpressionUUID->"1f58ff03-4af6-bb40-9ed8-7bbc729a1931"],
+ CellLabel->"In[17]:=",ExpressionUUID->"1f58ff03-4af6-bb40-9ed8-7bbc729a1931"],
 
 Cell[BoxData[{
  RowBox[{
@@ -365,8 +356,7 @@ Cell[BoxData[{
    RowBox[{"Matrix", " ", "M01t", " ", "derived", " ", "overt", " ", "time"}],
     "*)"}]}]}], "Input",
  CellChangeTimes->{{3.9761800746829815`*^9, 3.976180074688587*^9}},
- CellLabel->
-  "In[285]:=",ExpressionUUID->"c417d39a-daa4-8c4b-b50d-d24cb12e2680"]
+ CellLabel->"In[19]:=",ExpressionUUID->"c417d39a-daa4-8c4b-b50d-d24cb12e2680"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1219,7 +1209,7 @@ UNwkEoUbFRXVBcVNIlG4UVFRXVDcJFISq/r/gkf0NA==
   ImageSizeRaw->{249., 172.2},
   PlotRange->{{0, 249.}, {0, 172.2}}]], "Text",
  CellChangeTimes->{{3.976180121149477*^9, 3.9761801272209225`*^9}, 
-   3.976180378875698*^9},
+   3.976180378875698*^9, {3.9761836437430286`*^9, 3.9761836469757977`*^9}},
  CellLabel->"In[22]:=",ExpressionUUID->"addf4cf6-ed7a-fd49-a34a-ccc5177b1244"],
 
 Cell[BoxData[
@@ -1756,13 +1746,14 @@ Cell["\<\
 The goal is to compute the position of the end effector wrt the absolute \
 reference frame which here is denoted as 0.
 To do this, we are going to find a sequence of rototranslation matrices and \
-combine them together .
+combine them together.
 We can consider the joint connections in the top view as the origins of the \
-local reference frames . A is then going to the the origin of local reference \
+local reference frames. A is then going to the the origin of local reference \
 frame 1 and P the same for local reference frame 2.\
 \>", "Text",
- CellChangeTimes->{{3.9761801470867786`*^9, 
-  3.9761801684988194`*^9}},ExpressionUUID->"ce1c1499-15ee-2445-bc22-\
+ CellChangeTimes->{{3.9761801470867786`*^9, 3.9761801684988194`*^9}, {
+  3.976183622021559*^9, 
+  3.976183622053692*^9}},ExpressionUUID->"ce1c1499-15ee-2445-bc22-\
 8d33b144e313"],
 
 Cell[BoxData[
@@ -1778,8 +1769,7 @@ Cell[BoxData[
        RowBox[{"\[Theta]1", "[", "t", "]"}], "]"}]}], ",", "h", ",", "1"}], 
     "}"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.976180188883526*^9, 3.976180188883526*^9}},
- CellLabel->
-  "In[287]:=",ExpressionUUID->"59f265ad-5c4d-5047-a6ec-fee792aff60b"],
+ CellLabel->"In[21]:=",ExpressionUUID->"59f265ad-5c4d-5047-a6ec-fee792aff60b"],
 
 Cell[BoxData[
  RowBox[{
@@ -1791,8 +1781,7 @@ Cell[BoxData[
       RowBox[{"1", ";;", "3"}], "\[RightDoubleBracket]"}]}], "]"}]}], 
   ";"}]], "Input",
  CellChangeTimes->{{3.976180193728098*^9, 3.9761801937431545`*^9}},
- CellLabel->
-  "In[288]:=",ExpressionUUID->"ff7ba866-06b4-cc46-b50f-1f05aaac5f7f"],
+ CellLabel->"In[22]:=",ExpressionUUID->"ff7ba866-06b4-cc46-b50f-1f05aaac5f7f"],
 
 Cell[BoxData[
  RowBox[{"M01", "//", "MatrixForm", " ", 
@@ -1801,16 +1790,15 @@ Cell[BoxData[
    "Transformation", " ", "matrix", " ", "from", " ", "RF1", " ", "to", " ", 
     "RF0"}], "*)"}]}]], "Input",
  CellChangeTimes->{{3.9761802007243176`*^9, 3.9761802007243176`*^9}},
- CellLabel->
-  "In[289]:=",ExpressionUUID->"f03bc00a-7375-cb4b-ab64-e01298071b75"],
+ CellLabel->"In[23]:=",ExpressionUUID->"f03bc00a-7375-cb4b-ab64-e01298071b75"],
 
 Cell["\<\
 As an alternative, we can think that M01 is a transformation of the origin O0 \
 produced by the sequence of a rotation around z0 and a translation along x1 \
-and z1 .\
+and z1.\
 \>", "Text",
- CellChangeTimes->{{3.976180206204035*^9, 
-  3.9761802111517887`*^9}},ExpressionUUID->"8e10d689-85b3-234d-919e-\
+ CellChangeTimes->{{3.976180206204035*^9, 3.9761802111517887`*^9}, 
+   3.9761836220854073`*^9},ExpressionUUID->"8e10d689-85b3-234d-919e-\
 e24c85f054cb"],
 
 Cell[BoxData[
@@ -1827,8 +1815,7 @@ Cell[BoxData[
       RowBox[{"L1", ",", "0", ",", "h", ",", "1"}], "}"}]}], "]"}]}], "//", 
   "MatrixForm"}]], "Input",
  CellChangeTimes->{{3.976180226652464*^9, 3.976180226652464*^9}},
- CellLabel->
-  "In[290]:=",ExpressionUUID->"39549597-bd69-1445-a6c1-435161af308c"],
+ CellLabel->"In[24]:=",ExpressionUUID->"39549597-bd69-1445-a6c1-435161af308c"],
 
 Cell[BoxData[{
  RowBox[{
@@ -1856,8 +1843,7 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"P", "//", "Simplify"}], "//", "MatrixForm"}]}], "Input",
  CellChangeTimes->{{3.976180233962919*^9, 3.9761802339760914`*^9}},
- CellLabel->
-  "In[291]:=",ExpressionUUID->"8107e788-f981-bf47-b942-4ee0bf27e808"],
+ CellLabel->"In[25]:=",ExpressionUUID->"8107e788-f981-bf47-b942-4ee0bf27e808"],
 
 Cell[BoxData[{
  RowBox[{
@@ -1869,8 +1855,7 @@ Cell[BoxData[{
       RowBox[{"1", ";;", "3"}], "\[RightDoubleBracket]"}]}], "]"}]}], ";"}], "\n", 
  RowBox[{"M12", "//", "MatrixForm"}]}], "Input",
  CellChangeTimes->{{3.976180239329956*^9, 3.976180239329956*^9}},
- CellLabel->
-  "In[294]:=",ExpressionUUID->"44492b6f-ac0e-4b43-b257-0fadf677f3b8"],
+ CellLabel->"In[28]:=",ExpressionUUID->"44492b6f-ac0e-4b43-b257-0fadf677f3b8"],
 
 Cell[BoxData[{
  RowBox[{
@@ -2009,10 +1994,10 @@ Cell[BoxData[{
 Cell["\<\
 Given a point projected in reference frame 0, through the inverse of M03 it \
 is possible to find its coordinates in reference frame frame 3.
-For instance, point A :\
+For instance, point A:\
 \>", "Text",
- CellChangeTimes->{{3.9761803233991013`*^9, 
-  3.976180328892847*^9}},ExpressionUUID->"0a910e20-8ec1-3f42-b506-\
+ CellChangeTimes->{{3.9761803233991013`*^9, 3.976180328892847*^9}, 
+   3.976183742930769*^9},ExpressionUUID->"0a910e20-8ec1-3f42-b506-\
 a7c2566156da"],
 
 Cell[BoxData[
@@ -2034,16 +2019,16 @@ Cell["Inverse Kinematics", "Subtitle",
 
 Cell["\<\
 In Inverse kinematics the goal is to identify the positions of the joints \
-such that I can achieve a desired position and orientation of the end \
-effector .
+such that I can achieve a desired position and orientation of the end effector.
 The desired pose of the end effector is described by matrix M03d (d stands \
-for desired) . 
-Let' s assume that we need the end effector located at {xd,yd,zd} with \
+for desired). 
+Let's assume that we need the end effector located at {xd,yd,zd} with \
 orientation described by a simple rotation of \[Psi]d about z axis.\
 \>", "Text",
  CellChangeTimes->{{3.9761804778766727`*^9, 3.9761805154077053`*^9}, {
-  3.976180545776703*^9, 
-  3.976180562230768*^9}},ExpressionUUID->"0992feee-03bf-444a-a444-\
+   3.976180545776703*^9, 3.976180562230768*^9}, {3.976183622122175*^9, 
+   3.9761836221499405`*^9}, 
+   3.976183899208044*^9},ExpressionUUID->"0992feee-03bf-444a-a444-\
 0f916de747bf"],
 
 Cell[BoxData[{
@@ -2065,15 +2050,16 @@ Cell[BoxData[
   "In[313]:=",ExpressionUUID->"94083404-e345-db46-9b36-fc4f775a4cda"],
 
 Cell["\<\
-Inverse problem means find \[Theta]1, \[Theta]2 and L such that M03 = M03d . \
-16 equations with 3 unknowns, overconstrained problem .
-However some equations are void . Let' s try to simplify the problem by \
+Inverse problem means find \[Theta]1, \[Theta]2 and L such that M03 = M03d. \
+16 equations with 3 unknowns, overconstrained problem.
+However some equations are void. Let's try to simplify the problem by \
 starting to compare the rotation matrix subset of this roto - translation \
-matrix .
+matrix.
 The symbol ;; allows me to extract a series of rows/columns:\
 \>", "Text",
- CellChangeTimes->{{3.9761805814951878`*^9, 
-  3.976180615376108*^9}},ExpressionUUID->"f00899d3-a233-c74f-9885-\
+ CellChangeTimes->{{3.9761805814951878`*^9, 3.976180615376108*^9}, {
+   3.9761836221823635`*^9, 3.9761836222758923`*^9}, 
+   3.9761839058404408`*^9},ExpressionUUID->"f00899d3-a233-c74f-9885-\
 f0422431d3b0"],
 
 Cell[BoxData[
@@ -2116,16 +2102,17 @@ Cell[BoxData[{
 
 Cell["\<\
 Equating the rotation block RotBlock to the desired rotation matrix we have 6 \
-equations (due to symmetry 3 equations are repeated) with 2 unknowns .
-Again, this seems an over - constrained problem .
+equations (due to symmetry 3 equations are repeated) with 2 unknowns.
+Again, this seems an over - constrained problem.
 However, 3 equations are void (0 = 0, 0 = 0, 1 = 1) and 2 are the same (cos (\
 \[Theta]1 + \[Theta]2) = cos (\[Psi]d)), therefore 2 meaningful equations \
-remain .
+remain.
 The solution is available in closed form and is a relation between \[Theta]1, \
-\[Theta]2 and \[Psi]d .\
+\[Theta]2 and \[Psi]d.\
 \>", "Text",
- CellChangeTimes->{{3.9761806476916695`*^9, 
-  3.976180669696369*^9}},ExpressionUUID->"3ad1a1a3-d5e4-324c-b83b-\
+ CellChangeTimes->{{3.9761806476916695`*^9, 3.976180669696369*^9}, {
+  3.9761836223076*^9, 
+  3.976183622419115*^9}},ExpressionUUID->"3ad1a1a3-d5e4-324c-b83b-\
 6a095f7581a1"],
 
 Cell[BoxData[{
@@ -2208,12 +2195,13 @@ Cell[BoxData[
   "In[321]:=",ExpressionUUID->"4ac00d15-4022-604c-81aa-cbd2d89126de"],
 
 Cell["\<\
-Now we have 1 equation in 2 unknowns .
-Let' s equate the position of the end effector to the desired position we \
-have 4 equations, 1 void (1 = 1), therefore 3 more equations with 3 unknowns .\
+Now we have 1 equation in 2 unknowns.
+Let's equate the position of the end effector to the desired position we have \
+4 equations, 1 void (1 = 1), therefore 3 more equations with 3 unknowns.\
 \>", "Text",
- CellChangeTimes->{{3.976180702580763*^9, 
-  3.9761807116616497`*^9}},ExpressionUUID->"2cf7bfd7-73d7-294c-9243-\
+ CellChangeTimes->{{3.976180702580763*^9, 3.9761807116616497`*^9}, {
+   3.9761836224507294`*^9, 3.9761836224850025`*^9}, 
+   3.9761838919592514`*^9},ExpressionUUID->"2cf7bfd7-73d7-294c-9243-\
 ece3097fe983"],
 
 Cell[BoxData[{
@@ -2258,22 +2246,23 @@ Cell[BoxData[{
   "In[324]:=",ExpressionUUID->"38cf630f-fe53-ec49-b9cb-6c29a5282d4c"],
 
 Cell["\<\
-In summary : the system of 4 equations (EQI, EQII, EQIII, EQIIII) has three \
+In summary: the system of 4 equations (EQI, EQII, EQIII, EQIIII) has three \
 unknowns (\[Theta]1, \[Theta]2, L) therefore is over - constrained. It is not \
 guaranteed that, given a desired position of the end - effector (xd, yd, zd, \
 \[Psi]d), a solution exists.
 However, it is possible to select in (xd, yd, zd, \[Psi]d) three kinematic \
-quantities to fulfill . One of these is necessarily zd, which results \
+quantities to fulfill. One of these is necessarily zd, which results \
 uncoupled from the other ones as expressed by equation EQIIII.
 This means that EQIIII must always be selected in the set, otherwise no \
-solution for L(t) can be found .
-Let us select to satisfy the location of the end effector using : EQII, \
-EQIII, EQIIII . We expect two solutions if desired location is inside the \
-workspace (if we are at the boundary of the workspace, where the robot is in \
-singular configuration, the two solutions overlap) .\
+solution for L(t) can be found.
+Let us select to satisfy the location of the end effector using: EQII, EQIII, \
+EQIIII. We expect two solutions if desired location is inside the workspace \
+(if we are at the boundary of the workspace, where the robot is in singular \
+configuration, the two solutions overlap).\
 \>", "Text",
- CellChangeTimes->{{3.976180733630308*^9, 
-  3.9761807904641933`*^9}},ExpressionUUID->"f8b799f2-8b9a-7f4c-80fe-\
+ CellChangeTimes->{{3.976180733630308*^9, 3.9761807904641933`*^9}, {
+  3.9761836225144196`*^9, 3.9761836226259785`*^9}, {3.976183730718788*^9, 
+  3.976183730759348*^9}},ExpressionUUID->"f8b799f2-8b9a-7f4c-80fe-\
 10959ffb0441"],
 
 Cell[BoxData[
@@ -2318,10 +2307,10 @@ Cell[BoxData[{
   "In[328]:=",ExpressionUUID->"a24e3ade-c795-3748-9faa-51c5dc408e38"],
 
 Cell["\<\
-If we substitute KinSol2 into EQI we get the two values of \[Psi] obtained :\
+If we substitute KinSol2 into EQI we get the two values of \[Psi] obtained:\
 \>", "Text",
- CellChangeTimes->{{3.976180830235922*^9, 
-  3.9761808324659863`*^9}},ExpressionUUID->"c2a3ff7f-0fae-8945-bf2c-\
+ CellChangeTimes->{{3.976180830235922*^9, 3.9761808324659863`*^9}, 
+   3.9761837308032246`*^9},ExpressionUUID->"c2a3ff7f-0fae-8945-bf2c-\
 6bb337f47c63"],
 
 Cell[BoxData[{
@@ -2346,10 +2335,10 @@ Clearly \[Psi]d is constrained to be one of the two possible values allowed \
 by either solution1 or 2 of KinSol2.
 Therefore it is not possible to satisfy position and orientation of the end \
 effector (in this case, 4 dofs) with the allowable kinematics (3 dofs).
-We select the first solution as a reference .\
+We select the first solution as a reference.\
 \>", "Text",
- CellChangeTimes->{{3.9761808452910156`*^9, 
-  3.976180862817356*^9}},ExpressionUUID->"a83693b5-8646-af4f-82b1-\
+ CellChangeTimes->{{3.9761808452910156`*^9, 3.976180862817356*^9}, 
+   3.9761836226649246`*^9},ExpressionUUID->"a83693b5-8646-af4f-82b1-\
 dbed7349ea5e"],
 
 Cell[BoxData[
@@ -2362,10 +2351,10 @@ Cell[BoxData[
   "In[332]:=",ExpressionUUID->"c1984af8-6cbd-3344-8587-4ebb115cc4ec"],
 
 Cell["\<\
-Let us sketch the kinematic reference configuration of the robot :\
+Let us sketch the kinematic reference configuration of the robot:\
 \>", "Text",
- CellChangeTimes->{{3.97618088143186*^9, 
-  3.976180883525112*^9}},ExpressionUUID->"97445b73-68ed-2e48-aae7-\
+ CellChangeTimes->{{3.97618088143186*^9, 3.976180883525112*^9}, 
+   3.9761837308444004`*^9},ExpressionUUID->"97445b73-68ed-2e48-aae7-\
 e8cb681320e6"],
 
 Cell[BoxData[{
@@ -2435,14 +2424,15 @@ Cell[BoxData[{
 
 Cell["\<\
 If we need to produce a required orientation of the end effector (here \
-\[Pi]/4) we can only satisfy one of its coordinates (say, xd) .
-Rotation of the end effector : EQI originated by RotBlock[[1, 1]] == M03d[[1, \
+\[Pi]/4) we can only satisfy one of its coordinates (say, xd).
+Rotation of the end effector: EQI originated by RotBlock[[1, 1]] == M03d[[1, \
 1]] RotBlock[[1, 2]] == M03d[[1, 2]] Position xd and zd (EQII and EQIIII) of \
-the end effector : EE[[1]] == xd EE[[3]] == zd.
-We still get two solutions :\
+the end effector: EE[[1]] == xd EE[[3]] == zd.
+We still get two solutions:\
 \>", "Text",
- CellChangeTimes->{{3.976180904134121*^9, 
-  3.9761809267501373`*^9}},ExpressionUUID->"99e51160-daa0-dc47-a33e-\
+ CellChangeTimes->{{3.976180904134121*^9, 3.9761809267501373`*^9}, 
+   3.976183622706051*^9, {3.9761837308828697`*^9, 
+   3.9761837309680576`*^9}},ExpressionUUID->"99e51160-daa0-dc47-a33e-\
 2f7fd948deea"],
 
 Cell[BoxData[{
@@ -2490,10 +2480,11 @@ Cell[BoxData[{
 
 Cell["\<\
 If we produce the required orientation and xd coordinates of the end \
-effector, we get two configurations . The first :\
+effector, we get two configurations. The first:\
 \>", "Text",
- CellChangeTimes->{{3.9761809401107845`*^9, 
-  3.976180946885277*^9}},ExpressionUUID->"e9de19c5-22ef-4e41-9ebc-\
+ CellChangeTimes->{{3.9761809401107845`*^9, 3.976180946885277*^9}, 
+   3.9761836227366257`*^9, 
+   3.976183731009596*^9},ExpressionUUID->"e9de19c5-22ef-4e41-9ebc-\
 8401cecd6fb6"],
 
 Cell[BoxData[{
@@ -2543,10 +2534,10 @@ Cell[BoxData[{
 Cell["\<\
 In this case, we are not fixing y. For this reason, if we plot the other \
 solution of the system of equations, we get the same orientation but a \
-different y position .\
+different y position.\
 \>", "Text",
- CellChangeTimes->{{3.976180959883444*^9, 
-  3.9761809698284836`*^9}},ExpressionUUID->"86ef3360-7d7e-fd4c-b971-\
+ CellChangeTimes->{{3.976180959883444*^9, 3.9761809698284836`*^9}, 
+   3.976183622770685*^9},ExpressionUUID->"86ef3360-7d7e-fd4c-b971-\
 91e5578af64b"],
 
 Cell[BoxData[{
@@ -2596,7 +2587,7 @@ Cell[BoxData[{
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1141.2, 573.6},
+WindowSize->{1141.2, 568.8},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 TaggingRules-><|"TryRealOnly" -> False|>,
 FrontEndVersion->"14.3 for Microsoft Windows (64-bit) (July 8, 2025)",
@@ -2633,89 +2624,89 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[576, 22, 247, 5, 77, "Title",ExpressionUUID->"07cea4bc-4777-d84c-bc31-0d7fa506b256"],
 Cell[826, 29, 1004, 15, 28, "Input",ExpressionUUID->"20f0eb4d-bc01-e845-8195-664524271827"],
-Cell[1833, 46, 572, 12, 99, "Text",ExpressionUUID->"d76e3bf5-ea83-e74d-abb5-7be5a11572b1"],
-Cell[2408, 60, 2078, 59, 66, "Input",ExpressionUUID->"d12d3cf7-dfaa-634e-9f4b-14c76d3e5a2d"],
-Cell[4489, 121, 875, 14, 31, "Input",ExpressionUUID->"461b7f6a-25ae-5e48-8fc4-fcc7be9e35b4"],
-Cell[5367, 137, 285, 7, 55, "Text",ExpressionUUID->"e22e359e-ed5c-3343-8ab3-7c262528b00e"],
-Cell[5655, 146, 319, 8, 47, "Input",ExpressionUUID->"6f022072-4221-8b4a-b13c-13e0c7549db9"],
-Cell[5977, 156, 285, 7, 47, "Input",ExpressionUUID->"d223bfb9-ac3e-c44a-8970-6cccf14f8068"],
-Cell[6265, 165, 408, 9, 55, "Text",ExpressionUUID->"e16fd317-a760-524b-80fa-4fd28e069731"],
-Cell[6676, 176, 277, 7, 28, "Input",ExpressionUUID->"db63513f-9ecf-8a47-9e7f-251f5b8f2ec4"],
-Cell[6956, 185, 253, 6, 33, "Text",ExpressionUUID->"9b54ffbf-6270-1a47-b89f-3e373ba2e4bc"],
-Cell[7212, 193, 299, 7, 28, "Input",ExpressionUUID->"40428afe-d55d-874e-8833-5d83641c36e2"],
-Cell[7514, 202, 200, 5, 33, "Text",ExpressionUUID->"819d6649-cbf0-2749-8364-bc174f6e7a21"],
-Cell[7717, 209, 396, 10, 28, "Input",ExpressionUUID->"0225253d-df03-6c44-b721-6182b41f0187"],
-Cell[8116, 221, 171, 3, 33, "Text",ExpressionUUID->"0d3f149b-ed58-a648-81cc-630933a49bae"],
-Cell[8290, 226, 774, 19, 47, "Input",ExpressionUUID->"382baee4-3d53-ca47-8bdf-469019af94b8"],
-Cell[9067, 247, 777, 19, 47, "Input",ExpressionUUID->"2c97e4d3-8dc4-1146-97c2-41ff6c7960f9"],
-Cell[9847, 268, 339, 8, 28, "Input",ExpressionUUID->"a92ff26a-f104-aa43-8583-8e5e0a0f4643"]
+Cell[1833, 46, 599, 12, 99, "Text",ExpressionUUID->"d76e3bf5-ea83-e74d-abb5-7be5a11572b1"],
+Cell[2435, 60, 2073, 58, 66, "Input",ExpressionUUID->"d12d3cf7-dfaa-634e-9f4b-14c76d3e5a2d"],
+Cell[4511, 120, 870, 13, 31, "Input",ExpressionUUID->"461b7f6a-25ae-5e48-8fc4-fcc7be9e35b4"],
+Cell[5384, 135, 339, 8, 55, "Text",ExpressionUUID->"e22e359e-ed5c-3343-8ab3-7c262528b00e"],
+Cell[5726, 145, 314, 7, 47, "Input",ExpressionUUID->"6f022072-4221-8b4a-b13c-13e0c7549db9"],
+Cell[6043, 154, 280, 6, 47, "Input",ExpressionUUID->"d223bfb9-ac3e-c44a-8970-6cccf14f8068"],
+Cell[6326, 162, 435, 9, 55, "Text",ExpressionUUID->"e16fd317-a760-524b-80fa-4fd28e069731"],
+Cell[6764, 173, 272, 6, 28, "Input",ExpressionUUID->"db63513f-9ecf-8a47-9e7f-251f5b8f2ec4"],
+Cell[7039, 181, 253, 6, 33, "Text",ExpressionUUID->"9b54ffbf-6270-1a47-b89f-3e373ba2e4bc"],
+Cell[7295, 189, 295, 6, 28, "Input",ExpressionUUID->"40428afe-d55d-874e-8833-5d83641c36e2"],
+Cell[7593, 197, 200, 5, 33, "Text",ExpressionUUID->"819d6649-cbf0-2749-8364-bc174f6e7a21"],
+Cell[7796, 204, 392, 9, 28, "Input",ExpressionUUID->"0225253d-df03-6c44-b721-6182b41f0187"],
+Cell[8191, 215, 171, 3, 33, "Text",ExpressionUUID->"0d3f149b-ed58-a648-81cc-630933a49bae"],
+Cell[8365, 220, 823, 19, 47, "Input",ExpressionUUID->"382baee4-3d53-ca47-8bdf-469019af94b8"],
+Cell[9191, 241, 826, 19, 47, "Input",ExpressionUUID->"2c97e4d3-8dc4-1146-97c2-41ff6c7960f9"],
+Cell[10020, 262, 335, 7, 28, "Input",ExpressionUUID->"a92ff26a-f104-aa43-8583-8e5e0a0f4643"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10223, 281, 235, 4, 77, "Title",ExpressionUUID->"6dbff2a2-4955-2248-bb12-68f1c5e977ee"],
-Cell[10461, 287, 268, 6, 55, "Text",ExpressionUUID->"caf00fdd-5e0f-614d-8fd6-4ee63baef2a4"],
-Cell[10732, 295, 1254, 36, 47, "Input",ExpressionUUID->"479e0761-6ff8-244a-8382-072370b9da2a"],
-Cell[11989, 333, 269, 6, 55, "Text",ExpressionUUID->"7c9ad66e-b561-1e45-b5ba-7372fba27155"],
-Cell[12261, 341, 537, 14, 47, "Input",ExpressionUUID->"1f58ff03-4af6-bb40-9ed8-7bbc729a1931"],
-Cell[12801, 357, 446, 11, 47, "Input",ExpressionUUID->"c417d39a-daa4-8c4b-b50d-d24cb12e2680"]
+Cell[10392, 274, 235, 4, 77, "Title",ExpressionUUID->"6dbff2a2-4955-2248-bb12-68f1c5e977ee"],
+Cell[10630, 280, 290, 6, 55, "Text",ExpressionUUID->"caf00fdd-5e0f-614d-8fd6-4ee63baef2a4"],
+Cell[10923, 288, 1250, 35, 47, "Input",ExpressionUUID->"479e0761-6ff8-244a-8382-072370b9da2a"],
+Cell[12176, 325, 293, 6, 55, "Text",ExpressionUUID->"7c9ad66e-b561-1e45-b5ba-7372fba27155"],
+Cell[12472, 333, 533, 13, 47, "Input",ExpressionUUID->"1f58ff03-4af6-bb40-9ed8-7bbc729a1931"],
+Cell[13008, 348, 442, 10, 47, "Input",ExpressionUUID->"c417d39a-daa4-8c4b-b50d-d24cb12e2680"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13284, 373, 173, 3, 77, "Title",ExpressionUUID->"6a7118ed-ac4d-4941-b12f-751685dfa751"],
-Cell[13460, 378, 51167, 844, 187, "Text",ExpressionUUID->"addf4cf6-ed7a-fd49-a34a-ccc5177b1244"],
-Cell[64630, 1224, 31497, 521, 180, "Text",ExpressionUUID->"d2e43944-70c1-c949-8000-3c5493b4ef8c"],
+Cell[13487, 363, 173, 3, 77, "Title",ExpressionUUID->"6a7118ed-ac4d-4941-b12f-751685dfa751"],
+Cell[13663, 368, 51217, 844, 187, "Text",ExpressionUUID->"addf4cf6-ed7a-fd49-a34a-ccc5177b1244"],
+Cell[64883, 1214, 31497, 521, 180, "Text",ExpressionUUID->"d2e43944-70c1-c949-8000-3c5493b4ef8c"],
 Cell[CellGroupData[{
-Cell[96152, 1749, 165, 3, 52, "Subtitle",ExpressionUUID->"95a9968b-1f27-654b-b9a6-54c81a66166d"],
-Cell[96320, 1754, 584, 11, 99, "Text",ExpressionUUID->"ce1c1499-15ee-2445-bc22-8d33b144e313"],
-Cell[96907, 1767, 494, 14, 28, "Input",ExpressionUUID->"59f265ad-5c4d-5047-a6ec-fee792aff60b"],
-Cell[97404, 1783, 423, 11, 28, "Input",ExpressionUUID->"ff7ba866-06b4-cc46-b50f-1f05aaac5f7f"],
-Cell[97830, 1796, 348, 8, 28, "Input",ExpressionUUID->"f03bc00a-7375-cb4b-ab64-e01298071b75"],
-Cell[98181, 1806, 318, 7, 33, "Text",ExpressionUUID->"8e10d689-85b3-234d-919e-e24c85f054cb"],
-Cell[98502, 1815, 546, 15, 28, "Input",ExpressionUUID->"39549597-bd69-1445-a6c1-435161af308c"],
-Cell[99051, 1832, 914, 27, 66, "Input",ExpressionUUID->"8107e788-f981-bf47-b942-4ee0bf27e808"],
-Cell[99968, 1861, 466, 11, 47, "Input",ExpressionUUID->"44492b6f-ac0e-4b43-b257-0fadf677f3b8"],
-Cell[100437, 1874, 293, 7, 47, "Input",ExpressionUUID->"34cff2e0-c683-f845-8638-0e04326d5fd0"],
-Cell[100733, 1883, 532, 14, 47, "Input",ExpressionUUID->"2b3fa601-737b-1445-a171-ec6941eeb3e0"],
-Cell[101268, 1899, 481, 13, 28, "Input",ExpressionUUID->"8f34cffa-ada0-d34f-844c-6710c176c14f"],
-Cell[101752, 1914, 558, 14, 47, "Input",ExpressionUUID->"28d6b05d-71c9-344a-8e02-d63d5c9c266a"],
-Cell[102313, 1930, 492, 13, 47, "Input",ExpressionUUID->"3f65ffca-e75a-684a-8c58-51879b897062"],
-Cell[102808, 1945, 667, 17, 47, "Input",ExpressionUUID->"3c400b49-ea8b-0e42-990b-eb9a429c80f0"],
-Cell[103478, 1964, 508, 12, 28, "Input",ExpressionUUID->"ab065e80-51d2-cd4d-8e56-7e6e485f5587"],
-Cell[103989, 1978, 1086, 28, 66, "Input",ExpressionUUID->"14af9839-1cfc-4c4d-b0b3-9f88ec83717f"],
-Cell[105078, 2008, 317, 7, 55, "Text",ExpressionUUID->"0a910e20-8ec1-3f42-b506-a7c2566156da"],
-Cell[105398, 2017, 298, 7, 28, "Input",ExpressionUUID->"9eb50c21-4445-1840-8310-26533c3a799f"]
+Cell[96405, 1739, 165, 3, 52, "Subtitle",ExpressionUUID->"95a9968b-1f27-654b-b9a6-54c81a66166d"],
+Cell[96573, 1744, 631, 12, 99, "Text",ExpressionUUID->"ce1c1499-15ee-2445-bc22-8d33b144e313"],
+Cell[97207, 1758, 490, 13, 28, "Input",ExpressionUUID->"59f265ad-5c4d-5047-a6ec-fee792aff60b"],
+Cell[97700, 1773, 419, 10, 28, "Input",ExpressionUUID->"ff7ba866-06b4-cc46-b50f-1f05aaac5f7f"],
+Cell[98122, 1785, 344, 7, 28, "Input",ExpressionUUID->"f03bc00a-7375-cb4b-ab64-e01298071b75"],
+Cell[98469, 1794, 342, 7, 33, "Text",ExpressionUUID->"8e10d689-85b3-234d-919e-e24c85f054cb"],
+Cell[98814, 1803, 542, 14, 28, "Input",ExpressionUUID->"39549597-bd69-1445-a6c1-435161af308c"],
+Cell[99359, 1819, 910, 26, 66, "Input",ExpressionUUID->"8107e788-f981-bf47-b942-4ee0bf27e808"],
+Cell[100272, 1847, 462, 10, 47, "Input",ExpressionUUID->"44492b6f-ac0e-4b43-b257-0fadf677f3b8"],
+Cell[100737, 1859, 293, 7, 47, "Input",ExpressionUUID->"34cff2e0-c683-f845-8638-0e04326d5fd0"],
+Cell[101033, 1868, 532, 14, 47, "Input",ExpressionUUID->"2b3fa601-737b-1445-a171-ec6941eeb3e0"],
+Cell[101568, 1884, 481, 13, 28, "Input",ExpressionUUID->"8f34cffa-ada0-d34f-844c-6710c176c14f"],
+Cell[102052, 1899, 558, 14, 47, "Input",ExpressionUUID->"28d6b05d-71c9-344a-8e02-d63d5c9c266a"],
+Cell[102613, 1915, 492, 13, 47, "Input",ExpressionUUID->"3f65ffca-e75a-684a-8c58-51879b897062"],
+Cell[103108, 1930, 667, 17, 47, "Input",ExpressionUUID->"3c400b49-ea8b-0e42-990b-eb9a429c80f0"],
+Cell[103778, 1949, 508, 12, 28, "Input",ExpressionUUID->"ab065e80-51d2-cd4d-8e56-7e6e485f5587"],
+Cell[104289, 1963, 1086, 28, 66, "Input",ExpressionUUID->"14af9839-1cfc-4c4d-b0b3-9f88ec83717f"],
+Cell[105378, 1993, 339, 7, 55, "Text",ExpressionUUID->"0a910e20-8ec1-3f42-b506-a7c2566156da"],
+Cell[105720, 2002, 298, 7, 28, "Input",ExpressionUUID->"9eb50c21-4445-1840-8310-26533c3a799f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[105733, 2029, 166, 3, 52, "Subtitle",ExpressionUUID->"b17641e4-274c-1141-92e6-0a78a811d168"],
-Cell[105902, 2034, 595, 12, 77, "Text",ExpressionUUID->"0992feee-03bf-444a-a444-0f916de747bf"],
-Cell[106500, 2048, 404, 10, 47, "Input",ExpressionUUID->"f8b9548d-85e0-6244-a2a8-eb9705077d30"],
-Cell[106907, 2060, 210, 4, 28, "Input",ExpressionUUID->"94083404-e345-db46-9b36-fc4f775a4cda"],
-Cell[107120, 2066, 506, 10, 77, "Text",ExpressionUUID->"f00899d3-a233-c74f-9885-f0422431d3b0"],
-Cell[107629, 2078, 719, 20, 28, "Input",ExpressionUUID->"191c7c99-1cc7-364b-b35b-c41434b7cc30"],
-Cell[108351, 2100, 539, 14, 47, "Input",ExpressionUUID->"b101dd1f-ef39-544d-bf72-6412b2c77467"],
-Cell[108893, 2116, 620, 12, 99, "Text",ExpressionUUID->"3ad1a1a3-d5e4-324c-b83b-6a095f7581a1"],
-Cell[109516, 2130, 865, 21, 47, "Input",ExpressionUUID->"53c6f123-e64a-7e42-8e67-906d776b0b19"],
-Cell[110384, 2153, 684, 19, 28, "Input",ExpressionUUID->"9515bb1c-aae9-af46-91bd-21c767e31485"],
-Cell[111071, 2174, 246, 5, 28, "Input",ExpressionUUID->"7fa7cb5a-44ac-d34d-a18a-69bd62b3cf9a"],
-Cell[111320, 2181, 632, 17, 28, "Input",ExpressionUUID->"9816c0d0-dba1-e248-a72f-f00198eb3618"],
-Cell[111955, 2200, 306, 7, 28, "Input",ExpressionUUID->"4ac00d15-4022-604c-81aa-cbd2d89126de"],
-Cell[112264, 2209, 345, 7, 55, "Text",ExpressionUUID->"2cf7bfd7-73d7-294c-9243-ece3097fe983"],
-Cell[112612, 2218, 692, 19, 47, "Input",ExpressionUUID->"edd7ff86-2ad5-874e-be1d-35410dbb0bd5"],
-Cell[113307, 2239, 865, 18, 66, "Input",ExpressionUUID->"38cf630f-fe53-ec49-b9cb-6c29a5282d4c"],
-Cell[114175, 2259, 1018, 17, 164, "Text",ExpressionUUID->"f8b799f2-8b9a-7f4c-80fe-10959ffb0441"],
-Cell[115196, 2278, 471, 12, 28, "Input",ExpressionUUID->"05fdaf7b-59fc-0e44-a841-ee824ec7beaa"],
-Cell[115670, 2292, 906, 25, 47, "Input",ExpressionUUID->"a24e3ade-c795-3748-9faa-51c5dc408e38"],
-Cell[116579, 2319, 228, 5, 33, "Text",ExpressionUUID->"c2a3ff7f-0fae-8945-bf2c-6bb337f47c63"],
-Cell[116810, 2326, 543, 15, 47, "Input",ExpressionUUID->"3c61ac41-918e-b147-9f8b-68142bcbc954"],
-Cell[117356, 2343, 462, 9, 77, "Text",ExpressionUUID->"a83693b5-8646-af4f-82b1-dbed7349ea5e"],
-Cell[117821, 2354, 287, 7, 28, "Input",ExpressionUUID->"c1984af8-6cbd-3344-8587-4ebb115cc4ec"],
-Cell[118111, 2363, 215, 5, 33, "Text",ExpressionUUID->"97445b73-68ed-2e48-aae7-e8cb681320e6"],
-Cell[118329, 2370, 906, 28, 66, "Input",ExpressionUUID->"d1d62af0-5a4a-1a4b-9d06-87b81d22685c"],
-Cell[119238, 2400, 1166, 33, 66, "Input",ExpressionUUID->"8b432c7e-085c-8c46-87fb-da7194280641"],
-Cell[120407, 2435, 524, 10, 99, "Text",ExpressionUUID->"99e51160-daa0-dc47-a33e-2f7fd948deea"],
-Cell[120934, 2447, 1669, 41, 47, "Input",ExpressionUUID->"5bcb7f2b-3ea6-0143-abd0-774b09b2a764"],
-Cell[122606, 2490, 272, 6, 33, "Text",ExpressionUUID->"e9de19c5-22ef-4e41-9ebc-8401cecd6fb6"],
-Cell[122881, 2498, 1420, 42, 66, "Input",ExpressionUUID->"548f6e57-2b57-c34a-9971-0959b797fbd1"],
-Cell[124304, 2542, 322, 7, 33, "Text",ExpressionUUID->"86ef3360-7d7e-fd4c-b971-91e5578af64b"],
-Cell[124629, 2551, 1473, 43, 66, "Input",ExpressionUUID->"6faae443-91c2-ef48-8629-bdaa4da0e45c"]
+Cell[106055, 2014, 166, 3, 52, "Subtitle",ExpressionUUID->"b17641e4-274c-1141-92e6-0a78a811d168"],
+Cell[106224, 2019, 666, 12, 77, "Text",ExpressionUUID->"0992feee-03bf-444a-a444-0f916de747bf"],
+Cell[106893, 2033, 404, 10, 47, "Input",ExpressionUUID->"f8b9548d-85e0-6244-a2a8-eb9705077d30"],
+Cell[107300, 2045, 210, 4, 28, "Input",ExpressionUUID->"94083404-e345-db46-9b36-fc4f775a4cda"],
+Cell[107513, 2051, 580, 11, 77, "Text",ExpressionUUID->"f00899d3-a233-c74f-9885-f0422431d3b0"],
+Cell[108096, 2064, 719, 20, 28, "Input",ExpressionUUID->"191c7c99-1cc7-364b-b35b-c41434b7cc30"],
+Cell[108818, 2086, 539, 14, 47, "Input",ExpressionUUID->"b101dd1f-ef39-544d-bf72-6412b2c77467"],
+Cell[109360, 2102, 663, 13, 99, "Text",ExpressionUUID->"3ad1a1a3-d5e4-324c-b83b-6a095f7581a1"],
+Cell[110026, 2117, 865, 21, 47, "Input",ExpressionUUID->"53c6f123-e64a-7e42-8e67-906d776b0b19"],
+Cell[110894, 2140, 684, 19, 28, "Input",ExpressionUUID->"9515bb1c-aae9-af46-91bd-21c767e31485"],
+Cell[111581, 2161, 246, 5, 28, "Input",ExpressionUUID->"7fa7cb5a-44ac-d34d-a18a-69bd62b3cf9a"],
+Cell[111830, 2168, 632, 17, 28, "Input",ExpressionUUID->"9816c0d0-dba1-e248-a72f-f00198eb3618"],
+Cell[112465, 2187, 306, 7, 28, "Input",ExpressionUUID->"4ac00d15-4022-604c-81aa-cbd2d89126de"],
+Cell[112774, 2196, 421, 8, 55, "Text",ExpressionUUID->"2cf7bfd7-73d7-294c-9243-ece3097fe983"],
+Cell[113198, 2206, 692, 19, 47, "Input",ExpressionUUID->"edd7ff86-2ad5-874e-be1d-35410dbb0bd5"],
+Cell[113893, 2227, 865, 18, 66, "Input",ExpressionUUID->"38cf630f-fe53-ec49-b9cb-6c29a5282d4c"],
+Cell[114761, 2247, 1111, 18, 164, "Text",ExpressionUUID->"f8b799f2-8b9a-7f4c-80fe-10959ffb0441"],
+Cell[115875, 2267, 471, 12, 28, "Input",ExpressionUUID->"05fdaf7b-59fc-0e44-a841-ee824ec7beaa"],
+Cell[116349, 2281, 906, 25, 47, "Input",ExpressionUUID->"a24e3ade-c795-3748-9faa-51c5dc408e38"],
+Cell[117258, 2308, 252, 5, 33, "Text",ExpressionUUID->"c2a3ff7f-0fae-8945-bf2c-6bb337f47c63"],
+Cell[117513, 2315, 543, 15, 47, "Input",ExpressionUUID->"3c61ac41-918e-b147-9f8b-68142bcbc954"],
+Cell[118059, 2332, 486, 9, 77, "Text",ExpressionUUID->"a83693b5-8646-af4f-82b1-dbed7349ea5e"],
+Cell[118548, 2343, 287, 7, 28, "Input",ExpressionUUID->"c1984af8-6cbd-3344-8587-4ebb115cc4ec"],
+Cell[118838, 2352, 239, 5, 33, "Text",ExpressionUUID->"97445b73-68ed-2e48-aae7-e8cb681320e6"],
+Cell[119080, 2359, 906, 28, 66, "Input",ExpressionUUID->"d1d62af0-5a4a-1a4b-9d06-87b81d22685c"],
+Cell[119989, 2389, 1166, 33, 66, "Input",ExpressionUUID->"8b432c7e-085c-8c46-87fb-da7194280641"],
+Cell[121158, 2424, 597, 11, 99, "Text",ExpressionUUID->"99e51160-daa0-dc47-a33e-2f7fd948deea"],
+Cell[121758, 2437, 1669, 41, 47, "Input",ExpressionUUID->"5bcb7f2b-3ea6-0143-abd0-774b09b2a764"],
+Cell[123430, 2480, 321, 7, 33, "Text",ExpressionUUID->"e9de19c5-22ef-4e41-9ebc-8401cecd6fb6"],
+Cell[123754, 2489, 1420, 42, 66, "Input",ExpressionUUID->"548f6e57-2b57-c34a-9971-0959b797fbd1"],
+Cell[125177, 2533, 344, 7, 33, "Text",ExpressionUUID->"86ef3360-7d7e-fd4c-b971-91e5578af64b"],
+Cell[125524, 2542, 1473, 43, 66, "Input",ExpressionUUID->"6faae443-91c2-ef48-8629-bdaa4da0e45c"]
 }, Open  ]]
 }, Open  ]]
 }
